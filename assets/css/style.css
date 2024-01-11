@@ -1,0 +1,8 @@
+.center{
+    text-align: center;
+}
+
+.centerObject{
+    display: flex;
+    justify-content: center;
+}
