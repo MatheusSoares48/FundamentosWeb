@@ -1,0 +1,48 @@
+.center{
+    text-align: center;
+}
+
+.f20{
+    font-size: 20px;
+}
+
+.centerObject{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 20px;
+    
+}
+
+#menu li a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: red;
+}
+
+.p30{
+    padding: 30px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh-300{
+    width: 300px;
+    height: 300;
+}
