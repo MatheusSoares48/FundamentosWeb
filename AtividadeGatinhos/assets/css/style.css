@@ -1,3 +1,57 @@
+/* Resetando as config. padrões */
+* {
+    margin: 10;
+    padding: 0;
+
+    /* Definindo a Fonte de Texto do Projeto*/
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* Definindo a altura padrão da tela */
+    height: 100vh;
+
+    /* Scroll suave */
+    scroll-behavior: smooth;
+}
+
+/* Definindo "variaveis" de cor para o nosso projeto*/
+:root {
+    --purple-200: #d1683b;
+    --purple-500: #f24f49;
+    --purple-800: #ff1105;
+
+    --black-800: #171717;
+
+    --gray-200: #cccccc;
+    --gray-400: #505861;
+
+    --white: #F9F9F9;
+}
+
+body {
+    background: var(--black-800);
+    color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    /* largura da Scrollbar */
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    /* cor do plano de fundo da Scrollbar */
+    background: var(--black-800);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* cor do scroll */
+    background-color: var(--purple-500);
+
+    /* borda do scroll */
+    border-radius: 20px;
+}
+
 .center{
     text-align: center;
 }
@@ -45,4 +99,38 @@
 .wh-300{
     width: 300px;
     height: 300;
+}
+
+/* REDES SOCIAIS */
+.social_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 32px 0 0 0;
+    width: 320px;
+    /* 500px */
+}
+
+.social_icon {
+    width: 75px;
+    height: 75px;
+    filter: invert();
+}
+
+.social_icon:hover {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(31%) saturate(5190%) hue-rotate(249deg) brightness(79%) contrast(99%);
+}
+
+footer {
+    margin: 0;
+    padding: 32px;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

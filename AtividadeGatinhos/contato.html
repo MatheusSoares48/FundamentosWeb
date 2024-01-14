@@ -8,51 +8,86 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
-</head> 
+</head>
 
 <body>
-<div class="center">
-    <ul id="menu">
-    <li>
-        <a href="index.html"> Home </a>
-    </li>
-    <li>
-        <a href="contato.html"> Contato </a>
-    </li>
-    <li>
-        <a href="https://amparanimal.org.br/"> Site de Apoio aos Animais</a>
-    </li>
-</ul>
-</div>
-    
+    <div class="center">
+        <ul id="menu">
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato </a>
+            </li>
+            <li>
+                <a href="https://amparanimal.org.br/"> Site de Apoio aos Animais</a>
+            </li>
+        </ul>
+    </div>
 
-    <h1>Mande uma Mensagem ou apoie os Gatinhos FOFOS !!</h1>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label> <br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <h1 class="center">Mande uma Mensagem ou apoie os Gatinhos FOFOS !!</h1>
 
-    <h2>Endereço Pet Centro Animal Adoção de Gatinhos:</h2>
+    <div class="container">
+        <div class="p30">
+            <form class="center f20">
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="20" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+        <div class="p30">
+            <h2>Endereço Pet Centro Animal Adoção de Gatinhos:</h2>
 
-    <p>Rua gen. Jardim, Vila buarque,240</p>
-    <p>São Paulo - SP</p>
+            <p>Rua gen. Jardim, Vila buarque,240</p>
+            <p>São Paulo - SP</p>
+            <div class="p30">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233908.55398777325!2d-46.66114853443041!3d-23.646575067018922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5848cfb9e7d7%3A0x4bc1573043177d43!2sPet%20centro%20animal%20-%20Centro%20de%20ado%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1704826342397!5m2!1spt-BR!2sbr"
+                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+            </div>
+        </div>
+    </div>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233908.55398777325!2d-46.66114853443041!3d-23.646575067018922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5848cfb9e7d7%3A0x4bc1573043177d43!2sPet%20centro%20animal%20-%20Centro%20de%20ado%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1704826342397!5m2!1spt-BR!2sbr"
-        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="contato" class="contato_container">
+        <article id="contato-texto" class="contato_content">
+            <h4>Me Contate</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique esse fuga necessitatibus,
+                iusto alias eius perferendis qui iste minima blanditiis repellendus distinctio dolor obcaecati
+                aliquid quod quidem incidunt quibusdam!</p>
+
+            <div id="redes-sociais" class="social_container flex">
+                <a href="">
+                    <img class="social_icon" src="https://img.icons8.com/ios/500/linkedin.png" alt="Logo do LinkedIn" />
+                </a>
+                <a href="">
+                    <img class="social_icon" src="https://img.icons8.com/ios/500/github--v1.png" alt="Logo do Github" />
+                </a>
+                <a href="">
+                    <img class="social_icon" src="https://img.icons8.com/ios/500/instagram-new--v1.png"
+                        alt="Logo do Instagram" />
+                </a>
+            </div>
+        </article>
+
+        <footer class="flex">
+            Feito por Matheus Soares Rodrigues - 2024 👨‍💻
+        </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
